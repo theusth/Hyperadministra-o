@@ -1,12 +1,13 @@
 {
   "name": "app",
   "private": true,
-  "scripts": {
+"scripts": {
   "dev": "next dev",
-  "postinstall": "npx prisma generate --schema=prisma/schema.prisma",
-  "build": "npx prisma generate --schema=prisma/schema.prisma && next build",
+  "postinstall": "prisma generate",
+  "build": "prisma generate && next build --webpack",
   "start": "next start",
   "lint": "eslint ."
+},
 },
   "prisma": {
     "seed": "tsx --require dotenv/config scripts/safe-seed.ts"
