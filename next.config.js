@@ -38,4 +38,3 @@ if (fs.existsSync(userConfigPath)) {
 }
 
 module.exports = nextConfig;
-
