@@ -1,0 +1,21 @@
+# Dependencies and generated application files
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Prisma generated binaries
+node_modules/.prisma/
+
+# Logs and local editor files
+*.log
+.DS_Store
+.vscode/
+
+# Deployment output
+.vercel/
